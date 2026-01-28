@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home Staging Company Company</title>
+    <meta name="description" content="Explore our portfolio of stunning home staging projects. See before and after transformations of luxury properties.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <span>Home Staging Company</span>
+            </div>
+        </div>
+        
+        <nav class="header-center">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-right">
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Portfolio Hero -->
+        <section class="section-dark" id="portfolio-hero" style="padding-top: clamp(80px, 20vh, 120px);">
+            <div class="container">
+                <div class="text-center animate-fadeInUp">
+                    <h1 style="color: var(--accent-gold); margin-bottom: 1rem;">Our Portfolio</h1>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px; margin: 0 auto;">
+                        Discover stunning transformations and see how our staging expertise has helped properties sell faster and for more money.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Filter Gallery -->
+        <section class="section-cool" id="filter-gallery">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Featured Projects</h2>
+                    <p>Filter by category to explore our work</p>
+                </div>
+                
+                <!-- Filter Buttons -->
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <button class="filter-btn btn btn-primary active" data-filter="all">All Projects</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="living">Living Rooms</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="bedroom">Bedrooms</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="kitchen">Kitchens</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="outdoor">Outdoor Spaces</button>
+                </div>
+                
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <!-- Living Room Project -->
+                    <div class="portfolio-item animate-fadeInUp" data-category="living">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="assets/images/portfolio/living-room-1.jpg" alt="Modern living room staging" style="width: 100%; height: 250px; object-fit: cover;">
+                            <!-- Replace this path with your own image if not visible -->
+                            <div style="padding: 1.5rem;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Modern Luxury Living Room</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Beverly Hills, CA</p>
+                                <p style="margin-bottom: 1rem;">Complete transformation of a dated living room into a modern luxury space with neutral tones and premium furnishings.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--accent-sage); font-weight: 500;">Living Room</span>
+                                    <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bedroom Project -->
+                    <div class="portfolio-item animate-fadeInUp" data-category="bedroom" style="animation-delay: 0.1s;">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="assets/images/portfolio/bedroom-1.jpg" alt="Master bedroom staging" style="width: 100%; height: 250px; object-fit: cover;">
+                            <!-- Replace this path with your own image if not visible -->
+                            <div style="padding: 1.5rem;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Serene Master Suite</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Malibu, CA</p>
+                                <p style="margin-bottom: 1rem;">Created a tranquil retreat with coastal-inspired decor and luxurious bedding to showcase the ocean views.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--accent-sage); font-weight: 500;">Bedroom</span>
+                                    <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Kitchen Project -->
+                    <div class="portfolio-item animate-fadeInUp" data-category="kitchen" style="animation-delay: 0.2s;">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="assets/images/portfolio/kitchen-1.jpg" alt="Modern kitchen staging" style="width: 100%; height: 250px; object-fit: cover;">
+                            <!-- Replace this path with your own image if not visible -->
+                            <div style="padding: 1.5rem;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Chef's Dream Kitchen</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Santa Monica, CA</p>
+                                <p style="margin-bottom: 1rem;">Enhanced the existing modern kitchen with strategic staging to highlight high-end appliances and functionality.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--accent-sage); font-weight: 500;">Kitchen</span>
+                                    <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Outdoor Project -->
+                    <div class="portfolio-item animate-fadeInUp" data-category="outdoor" style="animation-delay: 0.3s;">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="assets/images/portfolio/outdoor-1.jpg" alt="Outdoor living space" style="width: 100%; height: 250px; object-fit: cover;">
+                            <!-- Replace this path with your own image if not visible -->
+                            <div style="padding: 1.5rem;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Resort-Style Outdoor Living</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Beverly Hills, CA</p>
+                                <p style="margin-bottom: 1rem;">Transformed the backyard into an entertainer's paradise with luxury outdoor furniture and ambient lighting.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--accent-sage); font-weight: 500;">Outdoor</span>
+                                    <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Living Room Project 2 -->
+                    <div class="portfolio-item animate-fadeInUp" data-category="living" style="animation-delay: 0.4s;">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="assets/images/portfolio/living-room-2.jpg" alt="Contemporary living room" style="width: 100%; height: 250px; object-fit: cover;">
+                            <!-- Replace this path with your own image if not visible -->
+                            <div style="padding: 1.5rem;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Contemporary Family Room</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">West Hollywood, CA</p>
+                                <p style="margin-bottom: 1rem;">Designed a family-friendly space that maintains sophistication while being warm and inviting.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--accent-sage); font-weight: 500;">Living Room</span>
+                                    <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bedroom Project 2 -->
+                    <div class="portfolio-item animate-fadeInUp" data-category="bedroom" style="animation-delay: 0.5s;">
+                        <div class="card" style="overflow: hidden;">
+                            <img src="assets/images/portfolio/bedroom-2.jpg" alt="Guest bedroom staging" style="width: 100%; height: 250px; object-fit: cover;">
+                            <!-- Replace this path with your own image if not visible -->
+                            <div style="padding: 1.5rem;">
+                                <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Elegant Guest Suite</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Beverly Hills, CA</p>
+                                <p style="margin-bottom: 1rem;">Created a luxurious guest bedroom that showcases the home's attention to detail and comfort.</p>
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <span style="color: var(--accent-sage); font-weight: 500;">Bedroom</span>
+                                    <a href="#" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.85rem;">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Before & After Showcase -->
+        <section class="section-light" id="before-after-showcase">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Dramatic Transformations</h2>
+                    <p>See the incredible before and after results</p>
+                </div>
+                
+                <div class="grid-2">
+                    <div class="animate-fadeInUp">
+                        <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Living Room Transformation</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <img src="assets/images/portfolio/before-living.jpg" alt="Before staging" style="width: 100%; border-radius: var(--radius-md);">
+                                <!-- Replace this path with your own image if not visible -->
+                                <p style="text-align: center; margin-top: 0.5rem; color: var(--text-muted); font-weight: 500;">Before</p>
+                            </div>
+                            <div>
+                                <img src="assets/images/portfolio/after-living.jpg" alt="After staging" style="width: 100%; border-radius: var(--radius-md);">
+                                <!-- Replace this path with your own image if not visible -->
+                                <p style="text-align: center; margin-top: 0.5rem; color: var(--accent-sage); font-weight: 500;">After</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="animate-fadeInUp" style="animation-delay: 0.1s;">
+                        <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Master Bedroom Makeover</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <img src="assets/images/portfolio/before-bedroom.jpg" alt="Before staging" style="width: 100%; border-radius: var(--radius-md);">
+                                <!-- Replace this path with your own image if not visible -->
+                                <p style="text-align: center; margin-top: 0.5rem; color: var(--text-muted); font-weight: 500;">Before</p>
+                            </div>
+                            <div>
+                                <img src="assets/images/portfolio/after-bedroom.jpg" alt="After staging" style="width: 100%; border-radius: var(--radius-md);">
+                                <!-- Replace this path with your own image if not visible -->
+                                <p style="text-align: center; margin-top: 0.5rem; color: var(--accent-sage); font-weight: 500;">After</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Client Success Stories -->
+        <section class="section-accent" id="client-success">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2 style="color: white;">Success Stories</h2>
+                    <p style="color: rgba(255,255,255,0.9);">Real results from our portfolio projects</p>
+                </div>
+                
+                <div class="grid-3">
+                    <div class="text-center animate-fadeInUp">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">$250K</div>
+                        <p style="color: rgba(255,255,255,0.9); font-weight: 500;">Over Asking Price</p>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Beverly Hills Estate</p>
+                    </div>
+                    
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.1s;">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">3 Days</div>
+                        <p style="color: rgba(255,255,255,0.9); font-weight: 500;">Time on Market</p>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Santa Monica Condo</p>
+                    </div>
+                    
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.2s;">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">15%</div>
+                        <p style="color: rgba(255,255,255,0.9); font-weight: 500;">Higher Sale Price</p>
+                        <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Malibu Beach House</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Recent Projects -->
+        <section class="section-light" id="recent-projects">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Recently Completed</h2>
+                    <p>Our latest staging projects</p>
+                </div>
+                
+                <div class="grid-3">
+                    <div class="card animate-fadeInUp">
+                        <img src="assets/images/portfolio/recent-1.jpg" alt="Recent project" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md) var(--radius-md) 0 0;">
+                        <!-- Replace this path with your own image if not visible -->
+                        <div style="padding: 1.5rem;">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Hollywood Hills Villa</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Completed 2 weeks ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card animate-fadeInUp" style="animation-delay: 0.1s;">
+                        <img src="assets/images/portfolio/recent-2.jpg" alt="Recent project" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md) var(--radius-md) 0 0;">
+                        <!-- Replace this path with your own image if not visible -->
+                        <div style="padding: 1.5rem;">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Beverly Grove Condo</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Completed 1 week ago</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card animate-fadeInUp" style="animation-delay: 0.2s;">
+                        <img src="assets/images/portfolio/recent-3.jpg" alt="Recent project" style="width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius-md) var(--radius-md) 0 0;">
+                        <!-- Replace this path with your own image if not visible -->
+                        <div style="padding: 1.5rem;">
+                            <h4 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Venice Beach House</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Completed 3 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Portfolio CTA -->
+        <section class="section-dark" id="portfolio-cta">
+            <div class="container">
+                <div class="text-center">
+                    <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">Ready to Transform Your Property?</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">
+                        Let us create a stunning portfolio piece for your property. Contact us today for a free consultation.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="btn btn-primary">Free Consultation</a>
+                        <a href="virtual-staging.html" class="btn btn-secondary">Virtual Staging Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Award-Winning Projects -->
+        <section class="section-light" id="award-projects">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Award-Winning Transformations</h2>
+                    <p>Recognized excellence in home staging and design</p>
+                </div>
+                
+                <div class="grid-2" style="align-items: center;">
+                    <div class="animate-slideInLeft">
+                        <div class="award-badge" style="background: var(--gradient-accent); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2rem; text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 style="color: white; margin-bottom: 0.5rem;">Best Staging Project 2024</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Beverly Hills Modern Estate</p>
+                        </div>
+                        
+                        <div class="award-badge" style="background: var(--gradient-sage); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 2rem; text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--accent-sage)">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 style="color: white; margin-bottom: 0.5rem;">Innovation in Design</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Santa Monica Beach House</p>
+                        </div>
+                        
+                        <div class="award-badge" style="background: var(--gradient-primary); border-radius: var(--radius-lg); padding: 2rem; text-align: center;">
+                            <div style="width: 80px; height: 80px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--primary-dark)">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 style="color: white; margin-bottom: 0.5rem;">Sustainable Staging Award</h3>
+                            <p style="color: rgba(255,255,255,0.9);">Eco-Friendly Hollywood Hills</p>
+                        </div>
+                    </div>
+                    
+                    <div class="animate-slideInRight">
+                        <img src="assets/images/portfolio/award-projects.jpg" alt="Award-winning staging projects" style="width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl);">
+                        <!-- Replace this path with your own image if not visible -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Client Portfolio Stats -->
+        <section class="section-cool" id="portfolio-stats">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Portfolio Performance</h2>
+                    <p>Measurable results from our staging work</p>
+                </div>
+                
+                <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div class="stat-card animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md); text-align: center; position: relative;">
+                        <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+                            </svg>
+                        </div>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">98%</div>
+                        <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Client Satisfaction</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Based on 500+ completed projects</p>
+                    </div>
+                    
+                    <div class="stat-card animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md); text-align: center; position: relative; animation-delay: 0.1s;">
+                        <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; background: var(--gradient-sage); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path>
+                            </svg>
+                        </div>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-sage); margin-bottom: 0.5rem;">23%</div>
+                        <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Average Price Increase</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Above market value</p>
+                    </div>
+                    
+                    <div class="stat-card animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md); text-align: center; position: relative; animation-delay: 0.2s;">
+                        <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path>
+                            </svg>
+                        </div>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-dark); margin-bottom: 0.5rem;">18</div>
+                        <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Days on Market</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Average time to sell</p>
+                    </div>
+                    
+                    <div class="stat-card animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 2rem; box-shadow: var(--shadow-md); text-align: center; position: relative; animation-delay: 0.3s;">
+                        <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 60px; height: 60px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">500+</div>
+                        <h4 style="color: var(--primary-dark); margin-bottom: 0.5rem;">Happy Clients</h4>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Across Los Angeles</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Portfolio Process -->
+        <section class="section-accent" id="portfolio-process">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2 style="color: white;">Our Portfolio Creation Process</h2>
+                    <p style="color: rgba(255,255,255,0.9);">How we transform properties into portfolio masterpieces</p>
+                </div>
+                
+                <div class="process-timeline" style="position: relative; max-width: 1000px; margin: 0 auto;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                        <div class="process-step animate-fadeInUp" style="text-align: center;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <span style="color: white; font-weight: 700; font-size: 1.5rem;">1</span>
+                            </div>
+                            <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Property Analysis</h3>
+                            <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Comprehensive evaluation of your property's unique features and market positioning.</p>
+                        </div>
+                        
+                        <div class="process-step animate-fadeInUp" style="text-align: center; animation-delay: 0.1s;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-sage); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <span style="color: white; font-weight: 700; font-size: 1.5rem;">2</span>
+                            </div>
+                            <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Design Strategy</h3>
+                            <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Custom staging plan tailored to your property's architecture and target buyers.</p>
+                        </div>
+                        
+                        <div class="process-step animate-fadeInUp" style="text-align: center; animation-delay: 0.2s;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <span style="color: white; font-weight: 700; font-size: 1.5rem;">3</span>
+                            </div>
+                            <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Professional Execution</h3>
+                            <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Expert staging with premium furnishings and attention to every detail.</p>
+                        </div>
+                        
+                        <div class="process-step animate-fadeInUp" style="text-align: center; animation-delay: 0.3s;">
+                            <div style="width: 80px; height: 80px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <span style="color: white; font-weight: 700; font-size: 1.5rem;">4</span>
+                            </div>
+                            <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Portfolio Photography</h3>
+                            <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Professional photography that captures your property's best features.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-lg">
+                    <a href="contact.html" class="btn btn-primary">Start Your Portfolio Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Home Staging Company</h3>
+                    <p>Premier home staging and virtual staging company transforming properties into buyer's dreams since 2015.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Physical Staging</a></li>
+                        <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Property Consultation</a></li>
+                        <li><a href="services.html">Staging for Photos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Luxury Lane</li>
+                        <li>Beverly Hills, CA 90210</li>
+                        <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li><a href="mailto:info@luxestaging.com">info@luxestaging.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Home Staging Company. All rights reserved. | <a href="#" style="color: var(--text-muted);">Privacy Policy</a> | <a href="#" style="color: var(--text-muted);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

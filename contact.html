@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Home Staging Company Company</title>
+    <meta name="description" content="Contact Home Staging Company for a free consultation. Get in touch with our team to discuss your home staging needs.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </div>
+                <span>Home Staging Company</span>
+            </div>
+        </div>
+        
+        <nav class="header-center">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="home2.html">Home 2</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-right">
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section 1: Contact Hero -->
+        <section class="section-dark" id="contact-hero" style="padding-top: clamp(80px, 20vh, 120px);">
+            <div class="container">
+                <div class="text-center animate-fadeInUp">
+                    <h1 style="color: var(--accent-gold); margin-bottom: 1rem;">Get in Touch</h1>
+                    <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px; margin: 0 auto;">
+                        Ready to transform your property? Contact us today for a free consultation and discover how we can help you sell faster and for more.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Contact Form & Info -->
+        <section class="section-light" id="contact-form-section">
+            <div class="container">
+                <div class="grid-2" style="align-items: start;">
+                    <!-- Contact Form -->
+                    <div class="animate-slideInLeft">
+                        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Send Us a Message</h2>
+                        <form id="contactForm" style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="name" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Full Name *</label>
+                                <input type="text" id="name" name="name" required style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);" placeholder="John Doe">
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Email Address *</label>
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);" placeholder="john@example.com">
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="phone" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);" placeholder="(555) 123-4567">
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="service" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Service Interested In</label>
+                                <select id="service" name="service" style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);">
+                                    <option value="">Select a service</option>
+                                    <option value="physical-staging">Physical Staging</option>
+                                    <option value="virtual-staging">Virtual Staging</option>
+                                    <option value="interior-design">Interior Design</option>
+                                    <option value="consultation">Property Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="message" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Message *</label>
+                                <textarea id="message" name="message" required rows="5" style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast); resize: vertical;" placeholder="Tell us about your property and staging needs..."></textarea>
+                            </div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <label style="display: flex; align-items: center; cursor: pointer;">
+                                    <input type="checkbox" id="newsletter" name="newsletter" style="margin-right: 0.5rem;">
+                                    <span style="color: var(--text-light); font-size: 0.9rem;">Send me staging tips and updates</span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="animate-slideInRight">
+                        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Contact Information</h2>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="width: 50px; height: 50px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 style="color: var(--accent-gold); margin: 0;">Office Location</h3>
+                                    <p style="color: var(--text-light); margin: 0.25rem 0;">123 Luxury Lane<br>Beverly Hills, CA 90210</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="width: 50px; height: 50px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 style="color: var(--accent-gold); margin: 0;">Phone</h3>
+                                    <p style="color: var(--text-light); margin: 0.25rem 0;">
+                                        <a href="tel:+15551234567" style="color: var(--accent-gold);">(555) 123-4567</a><br>
+                                        <a href="tel:+15559876543" style="color: var(--accent-gold);">(555) 987-6543</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 1.5rem;">
+                            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                                <div style="width: 50px; height: 50px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 style="color: var(--accent-gold); margin: 0;">Email</h3>
+                                    <p style="color: var(--text-light); margin: 0.25rem 0;">
+                                        <a href="mailto:info@luxestaging.com" style="color: var(--accent-gold);">info@luxestaging.com</a><br>
+                                        <a href="mailto:support@luxestaging.com" style="color: var(--accent-gold);">support@luxestaging.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Business Hours</h3>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span style="color: var(--text-light);">Monday - Friday</span>
+                                <span style="color: var(--accent-gold); font-weight: 500;">9:00 AM - 6:00 PM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span style="color: var(--text-light);">Saturday</span>
+                                <span style="color: var(--accent-gold); font-weight: 500;">10:00 AM - 4:00 PM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span style="color: var(--text-light);">Sunday</span>
+                                <span style="color: var(--accent-gold); font-weight: 500;">Closed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Map -->
+        <section class="section-cool" id="map-section">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Visit Our Showroom</h2>
+                    <p>Experience our staging services in person</p>
+                </div>
+                
+                <div class="animate-fadeInUp">
+                    <div style="background: white; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); height: 400px; position: relative;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.4992445487!2d-118.400943684784!3d34.07361348060728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b8b4d5f5a5a5%3A0x1234567890abcdef!2s123%20Luxury%20Lane%2C%20Beverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1234567890123"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <h3 style="color: var(--accent-gold); margin-bottom: 0.5rem;">Home Staging Company Showroom</h3>
+                        <p style="color: var(--text-dark); margin-bottom: 1rem;">123 Luxury Lane, Beverly Hills, CA 90210</p>
+                        <a href="https://maps.google.com/?q=123+Luxury+Lane+Beverly+Hills+CA+90210" target="_blank" class="btn btn-primary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: FAQ -->
+        <section class="section-light" id="faq-section">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions</p>
+                </div>
+                
+                <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                    <div class="faq-item animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--shadow-md);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <h3 style="color: var(--accent-gold); margin: 0;">How long does the staging process take?</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <p style="color: var(--text-light); margin-top: 1rem; display: none;">Physical staging typically takes 1-3 days depending on the property size. Virtual staging can be completed within 48 hours.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--shadow-md); animation-delay: 0.1s;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <h3 style="color: var(--accent-gold); margin: 0;">What is included in the staging service?</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <p style="color: var(--text-light); margin-top: 1rem; display: none;">Our services include furniture rental, accessories, artwork, lighting design, and professional installation. We also provide photography coordination.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--shadow-md); animation-delay: 0.2s;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <h3 style="color: var(--accent-gold); margin: 0;">Do you offer virtual staging?</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <p style="color: var(--text-light); margin-top: 1rem; display: none;">Yes! We offer high-quality virtual staging with photorealistic results. Perfect for vacant properties or when you need quick results.</p>
+                    </div>
+                    
+                    <div class="faq-item animate-fadeInUp" style="background: white; border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1rem; box-shadow: var(--shadow-md); animation-delay: 0.3s;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;">
+                            <h3 style="color: var(--accent-gold); margin: 0;">What areas do you serve?</h3>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-gold)">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </div>
+                        <p style="color: var(--text-light); margin-top: 1rem; display: none;">We primarily serve the Greater Los Angeles area, including Beverly Hills, Santa Monica, Malibu, and surrounding communities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Social Proof -->
+        <section class="section-accent" id="social-proof">
+            <div class="container">
+                <div class="text-center mb-lg">
+                    <h2 style="color: white;">Join Our Satisfied Clients</h2>
+                    <p style="color: rgba(255,255,255,0.9);">Over 500 homeowners trust Home Staging Company</p>
+                </div>
+                
+                <div class="grid-3">
+                    <div class="text-center animate-fadeInUp">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">500+</div>
+                        <p style="color: rgba(255,255,255,0.9); font-weight: 500;">Happy Clients</p>
+                    </div>
+                    
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.1s;">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">1000+</div>
+                        <p style="color: rgba(255,255,255,0.9); font-weight: 500;">Properties Staged</p>
+                    </div>
+                    
+                    <div class="text-center animate-fadeInUp" style="animation-delay: 0.2s;">
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-gold); margin-bottom: 0.5rem;">4.9</div>
+                        <p style="color: rgba(255,255,255,0.9); font-weight: 500;">Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Emergency Contact -->
+        <section class="section-dark" id="emergency-contact">
+            <div class="container">
+                <div style="background: var(--gradient-primary); border-radius: var(--radius-lg); padding: 3rem; text-align: center;">
+                    <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">Need Urgent Assistance?</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">
+                        For urgent staging needs or last-minute showings, call our emergency hotline.
+                    </p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; align-items: center; flex-wrap: wrap;">
+                        <a href="tel:+15551234567" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 0.5rem;">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Emergency Hotline
+                        </a>
+                        <span style="color: var(--accent-gold); font-weight: 500;">(555) 911-STAGE</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Home Staging Company</h3>
+                    <p>Premier home staging and virtual staging company transforming properties into buyer's dreams since 2015.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html">Physical Staging</a></li>
+                        <li><a href="virtual-staging.html">Virtual Staging</a></li>
+                        <li><a href="services.html">Interior Design</a></li>
+                        <li><a href="services.html">Property Consultation</a></li>
+                        <li><a href="services.html">Staging for Photos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>123 Luxury Lane</li>
+                        <li>Beverly Hills, CA 90210</li>
+                        <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+                        <li><a href="mailto:info@luxestaging.com">info@luxestaging.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Home Staging Company. All rights reserved. | <a href="#" style="color: var(--text-muted);">Privacy Policy</a> | <a href="#" style="color: var(--text-muted);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
