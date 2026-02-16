@@ -1,4 +1,4 @@
-// Home Staging Company - Main JavaScript File
+// Home Staging - Main JavaScript File
 // All interactive functionality for the website
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -18,10 +18,14 @@ function initMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const headerCenter = document.querySelector('.header-center');
     
+    console.log('Mobile menu initialized:', hamburger, headerCenter);
+    
     if (hamburger && headerCenter) {
         hamburger.addEventListener('click', function() {
+            console.log('Hamburger clicked');
             hamburger.classList.toggle('active');
             headerCenter.classList.toggle('active');
+            console.log('Classes toggled:', hamburger.classList, headerCenter.classList);
         });
         
         // Close menu when clicking on a link
