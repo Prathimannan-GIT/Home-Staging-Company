@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Home Staging Company</title>
-    <meta name="description" content="Login to your Home Staging account to access your projects, manage bookings, and view exclusive content.">
+    <meta name="description"
+        content="Login to your Home Staging account to access your projects, manage bookings, and view exclusive content.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header class="main-header">
@@ -23,203 +27,108 @@
                 <span>Home Staging</span>
             </div>
         </div>
-        
-        <nav class="header-center">
-            <ul class="nav-links">
-                <li><a href="index.html" style="color: var(--primary-light);">Home</a></li>
-                <li><a href="home2.html" style="color: var(--primary-light);">Home 2</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html" style="color: var(--primary-light);">Services</a></li>
-                <li><a href="portfolio.html" style="color: var(--primary-light);">Portfolio</a></li>
-                <li><a href="virtual-staging.html" style="color: var(--primary-light);">Virtual Staging</a></li>
-                <li><a href="pricing.html" style="color: var(--primary-light);">Pricing</a></li>
-                <li><a href="contact.html" style="color: var(--primary-light);">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <div class="header-right">
-            <a href="login.html" class="btn btn-primary">Login</a>
-            <a href="register.html" class="btn btn-secondary">Register</a>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+
+
+
+
     </header>
 
     <main>
+
         <!-- Section 1: Login Hero -->
-        <section class="section-dark" id="login-hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: clamp(80px, 20vh, 120px);">
+        <section class="section-dark" id="login-hero"
+            style="min-height: 100vh; display: flex; align-items: center; padding-top: clamp(80px, 20vh, 120px);">
             <div class="container">
                 <div class="grid-2" style="align-items: center;">
                     <!-- Left Side - Login Form -->
                     <div class="animate-slideInLeft">
-                        <div class="card" style="background: white; padding: 3rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);">
-                            <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem; text-align: center;">Welcome Back</h2>
-                            <p style="color: var(--text-muted); text-align: center; margin-bottom: 2rem;">Login to access your account</p>
-                            
+                        <div class="card"
+                            style="background: white; padding: 3rem; border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);">
+                            <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem; text-align: center;">Welcome
+                                Back</h2>
+                            <p style="color: var(--text-muted); text-align: center; margin-bottom: 2rem;">Login to
+                                access your account</p>
+
                             <form id="loginForm">
                                 <div style="margin-bottom: 1.5rem;">
-                                    <label for="email" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Email Address</label>
-                                    <input type="email" id="email" name="email" required style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);" placeholder="your@email.com">
+                                    <label for="email"
+                                        style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Email
+                                        Address</label>
+                                    <input type="email" id="email" name="email" required
+                                        style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);"
+                                        placeholder="your@email.com">
                                 </div>
-                                
+
                                 <div style="margin-bottom: 1.5rem;">
-                                    <label for="password" style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Password</label>
-                                    <input type="password" id="password" name="password" required style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);" placeholder="••••••••">
+                                    <label for="password"
+                                        style="display: block; margin-bottom: 0.5rem; color: var(--text-dark); font-weight: 500;">Password</label>
+                                    <input type="password" id="password" name="password" required
+                                        style="width: 100%; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: var(--radius-sm); font-size: 1rem; transition: var(--transition-fast);"
+                                        placeholder="••••••••">
                                 </div>
-                                
-                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+
+                                <div
+                                    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
                                     <label style="display: flex; align-items: center; cursor: pointer;">
-                                        <input type="checkbox" id="remember" name="remember" style="margin-right: 0.5rem;">
+                                        <input type="checkbox" id="remember" name="remember"
+                                            style="margin-right: 0.5rem;">
                                         <span style="color: var(--text-light); font-size: 0.9rem;">Remember me</span>
                                     </label>
-                                    <a href="#" style="color: var(--accent-gold); font-size: 0.9rem;">Forgot password?</a>
+                                    <a href="#" style="color: var(--accent-gold); font-size: 0.9rem;">Forgot
+                                        password?</a>
                                 </div>
-                                
-                                <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 1.5rem;">Login</button>
-                                
+
+                                <button type="submit" class="btn btn-primary"
+                                    style="width: 100%; margin-bottom: 1.5rem;">Login</button>
+
                                 <div style="text-align: center;">
                                     <p style="color: var(--text-muted); font-size: 0.9rem;">
-                                        Don't have an account? <a href="register.html" style="color: var(--accent-gold); font-weight: 500;">Register here</a>
+                                        Don't have an account? <a href="register.html"
+                                            style="color: var(--accent-gold); font-weight: 500;">Register here</a>
                                     </p>
                                 </div>
                             </form>
-                            
-                            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee;">
-                                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Or login with</p>
+
+                            <div
+                                style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee;">
+                                <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">Or login
+                                    with</p>
                                 <div style="display: flex; gap: 1rem; justify-content: center;">
-                                    <button style="width: 40px; height: 40px; border: 1px solid #e0e0e0; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition-fast);">
+                                    <button
+                                        style="width: 40px; height: 40px; border: 1px solid #e0e0e0; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition-fast);">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="#4285F4">
-                                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-                                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                                            <path
+                                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                            <path
+                                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                            <path
+                                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                            <path
+                                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
                                         </svg>
                                     </button>
-                                    <button style="width: 40px; height: 40px; border: 1px solid #e0e0e0; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition-fast);">
+                                    <button
+                                        style="width: 40px; height: 40px; border: 1px solid #e0e0e0; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: var(--transition-fast);">
                                         <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
-                                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                            <path
+                                                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                         </svg>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Right Side - Features -->
-                    <div class="animate-slideInRight">
-                        <div style="text-align: center;">
-                            <h2 style="color: var(--accent-gold); margin-bottom: 2rem;">Why Join Home Staging?</h2>
-                            
-                            <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1.5rem;">
-                                <div style="width: 60px; height: 60px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                    </svg>
-                                </div>
-                                <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Exclusive Content</h3>
-                                <p style="color: var(--text-muted);">Access premium staging tips, design trends, and industry insights.</p>
-                            </div>
-                            
-                            <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1.5rem;">
-                                <div style="width: 60px; height: 60px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
-                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                    </svg>
-                                </div>
-                                <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Project Management</h3>
-                                <p style="color: var(--text-muted);">Track your staging projects, manage bookings, and view progress.</p>
-                            </div>
-                            
-                            <div class="feature-card" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: var(--radius-lg); padding: 2rem;">
-                                <div style="width: 60px; height: 60px; background: var(--gradient-accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
-                                    <svg width="30" height="30" viewBox="0 0 24 24" fill="white">
-                                        <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path>
-                                    </svg>
-                                </div>
-                                <h3 style="color: var(--accent-gold); margin-bottom: 1rem;">Member Benefits</h3>
-                                <p style="color: var(--text-muted);">Enjoy special discounts, priority support, and exclusive offers.</p>
-                            </div>
-                        </div>
-                    </div>
+
+
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Home Staging</h3>
-                    <p style="color: var(--primary-light);">Premier home staging and virtual staging company transforming properties into buyer's dreams since 2015.</p>
-                    <div class="social-icons">
-                        <a href="#" class="social-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-icon">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="index.html" style="color: var(--primary-light);">Home</a></li>
-                        <li><a href="about.html" style="color: var(--primary-light);">About Us</a></li>
-                        <li><a href="services.html" style="color: var(--primary-light);">Services</a></li>
-                        <li><a href="portfolio.html" style="color: var(--primary-light);">Portfolio</a></li>
-                        <li><a href="virtual-staging.html" style="color: var(--primary-light);">Virtual Staging</a></li>
-                        <li><a href="pricing.html" style="color: var(--primary-light);">Pricing</a></li>
-                        <li><a href="testimonials.html" style="color: var(--primary-light);">Testimonials</a></li>
-                        <li><a href="contact.html" style="color: var(--primary-light);">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html" style="color: var(--primary-light);">Physical Staging</a></li>
-                        <li><a href="virtual-staging.html" style="color: var(--primary-light);">Virtual Staging</a></li>
-                        <li><a href="services.html" style="color: var(--primary-light);">Interior Design</a></li>
-                        <li><a href="services.html" style="color: var(--primary-light);">Property Consultation</a></li>
-                        <li><a href="services.html" style="color: var(--primary-light);">Staging for Photos</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <ul>
-                        <li style="color: var(--primary-light);">123 Luxury Lane</li>
-                        <li style="color: var(--primary-light);">Beverly Hills, CA 90210</li>
-                        <li><a href="tel:+15551234567">(555) 123-4567</a></li>
-                        <li><a href="mailto:info@luxestaging.com" style="color: var(--primary-light);">info@luxestaging.com</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p style="color: var(--primary-light);">&copy; 2026 Home Staging. All rights reserved. | <a href="#" style="color: var(--text-muted);">Privacy Policy</a> | <a href="#" style="color: var(--text-muted);">Terms of Service</a></p>
-            </div>
-        </div>
-    </footer>
+
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
