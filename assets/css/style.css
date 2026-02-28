@@ -328,7 +328,7 @@ section {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0 clamp(1rem, 5vw, 2rem);
 }
 
 /* Section Backgrounds */
@@ -385,19 +385,19 @@ section {
 /* Grid Layouts */
 .grid-2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: var(--spacing-md);
 }
 
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
     gap: var(--spacing-md);
 }
 
 .grid-4 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr));
     gap: var(--spacing-md);
 }
 
@@ -1460,4 +1460,90 @@ footer {
 
 .section-dark .card p {
     color: var(--text-muted);
+}
+/* Portfolio Section */
+.portfolio-section {
+    padding: 4rem 5%;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+/* Make cards equal height */
+.portfolio-item {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* Image */
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Content */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+/* Title */
+.card-content h3 {
+    color: var(--accent-gold);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Location */
+.location {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Description */
+.description {
+    flex-grow: 1;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer span {
+    color: var(--accent-sage);
+    font-weight: 500;
+}
+
+/* Button */
+.btn-secondary {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    text-decoration: none;
 }
