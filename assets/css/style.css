@@ -1625,14 +1625,40 @@ footer {
 
 /* Desktop: 1440px */
 @media (min-width: 1025px) and (max-width: 1440px) {
-    .hero-text > div:last-child{
-        justify-content:center;
+    .hero-buttons{
+        justify-content:center !important;
         gap:1rem;
         flex-wrap:wrap;
+        align-items: center !important;
+        display: flex !important;
     }
     
-    .hero-text > div:last-child a{
-        flex:none;
+    .hero-buttons a{
+        flex:none !important;
         width:auto;
+    }
+    
+    .hero-buttons .btn{
+        margin: 0 auto !important;
+    }
+}
+
+/* Large Desktop: Above 1440px */
+@media (min-width: 1441px) {
+    .hero-buttons{
+        justify-content:center !important;
+        gap:1rem;
+        flex-wrap:wrap;
+        align-items: center !important;
+        display: flex !important;
+    }
+    
+    .hero-buttons a{
+        flex:none !important;
+        width:auto;
+    }
+    
+    .hero-buttons .btn{
+        margin: 0 auto !important;
     }
 }
